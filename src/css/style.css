@@ -26,3 +26,20 @@ body {
     margin: auto;
     border-bottom: 1px #dddddd solid;
 }
+
+#authors img {
+    margin-top: -40px;
+}
+
+#authors .fa {
+    font-size: 25px;
+}
+
+#authors .card:hover {
+    background: #3292a6;
+    color: #ffffff;
+}
+
+#authors .card:hover .svg-inline--fa {
+    color: #ffffff;
+}
