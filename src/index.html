@@ -60,8 +60,8 @@
 
 <!-- NEWSLETTER -->
 <section id="newsletter" class="bg-dark text-white py-5">
-    <div class="container">
-        <div class="row">
+    <form class="container">
+        <div class="form-row">
             <div class="col-md-4">
                 <input type="text" class="form-control form-control-lg" name="newsName" placeholder="Enter Name">
             </div>
@@ -69,12 +69,12 @@
                 <input type="email" class="form-control form-control-lg" name="newsEmail" placeholder="Enter Email">
             </div>
             <div class="col-md-4">
-                <button class="btn btn-primary btn-lg btn-block"><span
+                <button type="submit" class="btn btn-primary btn-lg btn-block"><span
                         class="far fa-envelope-open"></span> Subscribe
                 </button>
             </div>
         </div>
-    </div>
+    </form>
 </section>
 
 <!-- BOXES -->
@@ -135,16 +135,18 @@
                 </div>
 
                 <!-- ACCORDION -->
-                <div id="accordion" role="tablist">
+                <div id="accordion">
                     <div class="card">
-                        <div class="card-header" id="heading1">
-                            <div href="#collapse1" data-toggle="collapse" data-parent="#accordion">
-                                <h5 class="mb-0">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
                                     <span class="fas fa-arrow-circle-down"></span> Get Inspired
-                                </h5>
-                            </div>
+                                </button>
+                            </h5>
                         </div>
-                        <div id="collapse1" class="collapse show">
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                             data-parent="#accordion">
                             <div class="card-body">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur inventore nisi
                                 pariatur perferendis quaerat? Consequatur dolorem ducimus eligendi fuga minima molestiae
@@ -156,39 +158,45 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header" id="heading2">
-                            <div href="#collapse2" data-toggle="collapse" data-parent="#accordion">
-                                <h5 class="mb-0">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">
                                     <span class="fas fa-arrow-circle-down"></span> Gain The Knowledge
-                                </h5>
-                            </div>
+                                </button>
+                            </h5>
                         </div>
-                        <div id="collapse2" class="collapse">
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                             data-parent="#accordion">
                             <div class="card-body">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto autem culpa
-                                distinctio dolor dolores dolorum eaque facere illo iste magnam magni necessitatibus,
-                                nisi nobis nostrum nulla odio officia omnis placeat praesentium reiciendis rerum saepe
-                                sit tenetur ullam ut vel vero vitae voluptate voluptatem! Delectus ipsa neque veniam? Ea
-                                error modi natus, odit pariatur quam quas repellendus veritatis vitae voluptatum.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos fugit ipsam nemo
+                                nihil quaerat reiciendis repellendus voluptatem voluptatum. Ab debitis in itaque laborum
+                                quaerat sint vero? Alias amet asperiores, aspernatur atque corporis dicta dolorum earum
+                                eos excepturi expedita fugiat harum impedit ipsa iste iure iusto libero nam
+                                necessitatibus, nemo neque nesciunt nihil porro quaerat, qui quidem quo ratione vitae
+                                voluptatibus.
                             </div>
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header" id="heading3">
-                            <div href="#collapse3" data-toggle="collapse" data-parent="#accordion">
-                                <h5 class="mb-0">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseThree"
+                                        aria-expanded="false" aria-controls="collapseThree">
                                     <span class="fas fa-arrow-circle-down"></span> Open Your Mind
-                                </h5>
-                            </div>
+                                </button>
+                            </h5>
                         </div>
-                        <div id="collapse3" class="collapse">
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                             data-parent="#accordion">
                             <div class="card-body">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum eius error laborum minus
-                                provident quisquam repellat rerum ut? Accusantium architecto blanditiis, eligendi
-                                exercitationem, explicabo iste maiores nemo nostrum optio sit tempore temporibus! Ad,
-                                asperiores beatae consequatur dolor dolorem doloremque facilis illum ipsam iure labore
-                                maiores minima modi nemo nihil nisi non odit optio placeat quaerat reiciendis repellat
-                                tempora temporibus voluptate!
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, fugit, in! Ab aliquid
+                                asperiores at cupiditate deleniti deserunt dicta dignissimos doloremque doloribus eos
+                                explicabo fuga fugiat id illo inventore molestias nam natus nobis nostrum nulla officia
+                                officiis pariatur perferendis perspiciatis placeat praesentium quas, qui quibusdam, quod
+                                repellendus, sed sequi sint unde veniam veritatis voluptas voluptatum! Blanditiis eum
+                                odit quod ratione?
                             </div>
                         </div>
                     </div>
@@ -225,13 +233,13 @@
                             provident ullam?</p>
                         <div class="d-flex flex-row justify-content-center mt-auto">
                             <div class="p-4">
-                                <a href="#"><span class="fab fa-facebook-f"></span></a>
+                                <a href="https://www.facebook.com/"><span class="fab fa-facebook-f"></span></a>
                             </div>
                             <div class="p-4">
-                                <a href="#"><span class="fab fa-twitter"></span></a>
+                                <a href="https://twitter.com/?lang=en"><span class="fab fa-twitter"></span></a>
                             </div>
                             <div class="p-4">
-                                <a href="#"><span class="fab fa-instagram"></span></a>
+                                <a href="https://www.instagram.com/?hl=en"><span class="fab fa-instagram"></span></a>
                             </div>
                         </div>
                     </div>
@@ -247,13 +255,13 @@
                             eligendi excepturi fugiat pariatur!</p>
                         <div class="d-flex flex-row justify-content-center mt-auto">
                             <div class="p-4">
-                                <a href="#"><span class="fab fa-facebook-f"></span></a>
+                                <a href="https://www.facebook.com/"><span class="fab fa-facebook-f"></span></a>
                             </div>
                             <div class="p-4">
-                                <a href="#"><span class="fab fa-twitter"></span></a>
+                                <a href="https://twitter.com/?lang=en"><span class="fab fa-twitter"></span></a>
                             </div>
                             <div class="p-4">
-                                <a href="#"><span class="fab fa-instagram"></span></a>
+                                <a href="https://www.instagram.com/?hl=en"><span class="fab fa-instagram"></span></a>
                             </div>
                         </div>
                     </div>
@@ -269,13 +277,13 @@
                             unde?</p>
                         <div class="d-flex flex-row justify-content-center mt-auto">
                             <div class="p-4">
-                                <a href="#"><span class="fab fa-facebook-f"></span></a>
+                                <a href="https://www.facebook.com/"><span class="fab fa-facebook-f"></span></a>
                             </div>
                             <div class="p-4">
-                                <a href="#"><span class="fab fa-twitter"></span></a>
+                                <a href="https://twitter.com/?lang=en"><span class="fab fa-twitter"></span></a>
                             </div>
                             <div class="p-4">
-                                <a href="#"><span class="fab fa-instagram"></span></a>
+                                <a href="https://www.instagram.com/?hl=en"><span class="fab fa-instagram"></span></a>
                             </div>
                         </div>
                     </div>
@@ -291,13 +299,13 @@
                             molestias numquam placeat saepe.</p>
                         <div class="d-flex flex-row justify-content-center mt-auto">
                             <div class="p-4">
-                                <a href="#"><span class="fab fa-facebook-f"></span></a>
+                                <a href="https://www.facebook.com/"><span class="fab fa-facebook-f"></span></a>
                             </div>
                             <div class="p-4">
-                                <a href="#"><span class="fab fa-twitter"></span></a>
+                                <a href="https://twitter.com/?lang=en"><span class="fab fa-twitter"></span></a>
                             </div>
                             <div class="p-4">
-                                <a href="#"><span class="fab fa-instagram"></span></a>
+                                <a href="https://www.instagram.com/?hl=en"><span class="fab fa-instagram"></span></a>
                             </div>
                         </div>
                     </div>
